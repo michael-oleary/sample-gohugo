@@ -4,6 +4,9 @@ frontend:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
+        - nvm --version
+        - nvm install v22.11.0
+        - nvm use v22.11.0
         - which hugo
         - hugo version
         - npm upgrade hugo
