@@ -4,8 +4,9 @@ frontend:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
-        - sudo yum update hugo
-        # - go install github.com/gohugoio/hugo@latest
+        - sudo wget https://github.com/gohugoio/hugo/releases/download/v0.138.0/hugo_extended_0.138.0_Linux-64bit.tar.gz
+        - sudo tar -xzf hugo_extended_X.Y.Z_Linux-64bit.tar.gz
+        - sudo mv hugo /usr/local/bin/
     build:
       commands:
         - hugo
