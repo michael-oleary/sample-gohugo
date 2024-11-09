@@ -4,6 +4,8 @@ frontend:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
+        - which hugo
+        - hugo version
         - npm upgrade hugo
     build:
       commands:
