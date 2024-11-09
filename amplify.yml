@@ -2,6 +2,9 @@ version: 1
 frontend:
   phases:
     # IMPORTANT - Please verify your build commands
+    pre-build:
+      commands:
+        - go install github.com/gohugoio/hugo@latest
     build:
       commands:
         - hugo
