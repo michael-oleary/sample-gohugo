@@ -4,11 +4,8 @@ frontend:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
-        - which hugo
+        - npm update hugo
         - exit 1
-        - sudo wget https://github.com/gohugoio/hugo/releases/download/v0.138.0/hugo_extended_0.138.0_Linux-64bit.tar.gz
-        - sudo tar -xzf hugo_extended_0.138.0_Linux-64bit.tar.gz
-        - sudo mv hugo /usr/local/bin/
     build:
       commands:
         - hugo
