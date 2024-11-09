@@ -4,7 +4,7 @@ frontend:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
-        - yum update hugo
+        - sudo yum update hugo
         # - go install github.com/gohugoio/hugo@latest
     build:
       commands:
